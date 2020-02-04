@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="theme-color" content="#285154"/>
+    <meta name="Description" content="JSONata: A declarative open-source query and transformation language for JSON data.">
+    <title>JSONata</title>
+    <link rel="icon" type="image/png" href="images/jsonata-button.png" />
+    <link rel="stylesheet" href="reset.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro:700" rel="stylesheet">
+    <script src="js/controller.js" type="text/javascript"></script>
+</head>
+<body>
+<header>
+    <img src="images/jsonata-button.png">
+    <h1>JSONata</h1>
+    <p>query and transformation language</p>
+    <div id="menu"><img src="images/menu-icon.png" onclick="menuToggle();"></div>
+    <nav>
+        <div id="menuitems">
+            <div><a href="http://try.jsonata.org">try</a></div>
+            <div><a href="http://docs.jsonata.org">documentation</a></div>
+            <div><a href="https://www.npmjs.com/package/jsonata">npm</a></div>
+            <div><a href="https://github.com/jsonata-js/jsonata">github</a></div>
+        </div>
+    </nav>
+</header>
+<section id="overview">
+    <h2 class="hidden">JSONata overview</h2>
+    <div id="wrapper">
+        <div id="banner">
+            <h1>JSONata</h1>
+            <h2>JSON query and transformation language</h2>
+            <div id="stave">
+                <div class="line">Address.City</div>
+                <div class="line">FirstName & ' ' & Surname</div>
+                <div class="line">Phone[type = 'mobile'].number</div>
+                <div class="line">$sum(Order.Product.(Price * Quantity))</div>
+                <div class="clef"><img src="images/jsonata256.png"></div>
+            </div>
+            <p>Go play in the <a href="http://try.jsonata.org">JSONata Exerciser</a></p>
+        </div>
+        <div id="description">
+            <ul>
+                <li>Lightweight query and transformation language for JSON data</li>
+                <li>Inspired by the <em>location path</em> semantics of XPath 3.1</li>
+                <li>Sophisticated query expressions with minimal syntax</li>
+                <li>Built in operators and functions for manipulating and combining data</li>
+                <li>Create user-defined functions</li>
+                <li>Format query results into any JSON output structure</li>
+            </ul>
+        </div>
+        <div id="youtube">
+            <p><iframe src="https://www.youtube.com/embed/ZBaK40rtIBM" frameborder="0" allowfullscreen></iframe></p>
+        </div>
+    </div>
+</section>
+<footer>
+    <h2 class="hidden">footer</h2>
+    <section class="wrapper">
+        <h3 class="hidden">Footer content</h3>
+        <article class="column description">
+            <h4>JSONata</h4>
+            JSON query and transformation language.<br>
+            Go play in the <a href="http://try.jsonata.org">JSONata Exerciser</a>
+        </article>
+        <article class="column midlist">
+            <h4>Go deeper</h4>
+            <ul>
+                <li><a href="http://docs.jsonata.org"><img src="images/docs-white-32.png" alt="Documentation"> Documentation</a></li>
+                <li><a href="https://github.com/jsonata-js/jsonata"><img src="images/GitHub-Mark-Light-32px.png"> GitHub</a></li>
+                <li><a href="https://www.npmjs.com/package/jsonata"><img src="images/n-64.png"> NPM</a></li>
+            </ul>
+        </article>
+        <article class="column rightlist">
+            <h4>Discuss</h4>
+            <ul>
+                <li><a href="http://stackoverflow.com/search?q=JSONata"><img src="images/so-white-32.png"> stackoverflow</a></li>
+                <li><a href="https://developer.ibm.com/open/jsonata/"><span id="devWorks">dW</span> developerWorks Open</a></li>
+                <li><a href="http://twitter.com/intent/tweet?status=JSONata:  The JSON query and transformation language.+http://jsonata.org"><img id="t-icon" src="images/twitter-white.png"> Twitter</a></li>
+            </ul>
+        </article>
+    </section>
+    <section id="copyright">
+        <h3 class="hidden">Copyright notice</h3>
+        <div class="wrapper">
+            &copy; Copyright 2016 <a href="http://jsonata.org">jsonata.org</a>. All Rights Reserved.
+        </div>
+    </section>
+</footer>
+</body>
+</html>
