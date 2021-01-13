@@ -140,6 +140,11 @@ nav {
     color: #542328;
 }
 
+#copyright .wrapper a {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
 #banner {
     position: relative;
     background-color: ivory;
